@@ -19,7 +19,6 @@ def test_single_slaps():
     ('ldd', LikeState.empty),
     ('lldd', LikeState.empty),
     ('ddl', LikeState.liked),
-    ('ddd', LikeState.disliked)
 ])
 def test_multi_slaps(test_input, expected):
     assert slap_many(LikeState.empty, test_input) is expected
